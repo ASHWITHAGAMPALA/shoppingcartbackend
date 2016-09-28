@@ -14,9 +14,9 @@ public class CategoryTest {
 		context.refresh();
 		CategoryDAO categoryDAO = (CategoryDAO) context.getBean("categoryDAO");
 		Category category = (Category)context.getBean("category");
-		category.setId("CG231");
+		/*category.setId("CG231");
 		category.setName("CGNa32");
-		category.setDescription("This isdesc");
+		category.setDescription("This isdesc");*/
 		
 		if(categoryDAO.save(category)==true)
 		{
